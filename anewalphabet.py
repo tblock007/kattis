@@ -1,0 +1,31 @@
+def conv(c):
+    if c == 'a' or c == 'A': return '@'
+    if c == 'b' or c == 'B': return '8'
+    if c == 'c' or c == 'C': return '('
+    if c == 'd' or c == 'D': return '|)'
+    if c == 'e' or c == 'E': return '3'
+    if c == 'f' or c == 'F': return '#'
+    if c == 'g' or c == 'G': return '6'
+    if c == 'h' or c == 'H': return '[-]'
+    if c == 'i' or c == 'I': return '|'
+    if c == 'j' or c == 'J': return '_|'
+    if c == 'k' or c == 'K': return '|<'
+    if c == 'l' or c == 'L': return '1'
+    if c == 'm' or c == 'M': return '[]\\/[]'
+    if c == 'n' or c == 'N': return '[]\\[]'
+    if c == 'o' or c == 'O': return '0'
+    if c == 'p' or c == 'P': return '|D'
+    if c == 'q' or c == 'Q': return '(,)'
+    if c == 'r' or c == 'R': return '|Z'
+    if c == 's' or c == 'S': return '$'
+    if c == 't' or c == 'T': return '\'][\''
+    if c == 'u' or c == 'U': return '|_|'
+    if c == 'v' or c == 'V': return '\\/'
+    if c == 'w' or c == 'W': return '\\/\\/'
+    if c == 'x' or c == 'X': return '}{'
+    if c == 'y' or c == 'Y': return '`/'
+    if c == 'z' or c == 'Z': return '2'
+    return c
+
+line = input()
+print(''.join(conv(c) for c in line))
