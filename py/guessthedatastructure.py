@@ -1,11 +1,19 @@
 import heapq
 from collections import deque
 
+# we use this while True in combination with try and except EOFError in
+# order to read to the end of the input
 while True:
 	try:
 		n = int(input())
+
+		# we will simply simulate the process with each data structure 
+		# and track violations
 		s, q, pq = deque(), deque(), []
-		isStack, isQueue, isPQueue = True, True, True
+
+		# dictates whether this structure can be a stack, queue, or priority queue
+		isStack, isQueue, isPQueue = True, True, True 
+		
 		for _ in range(n):
 			c, v = [int(w) for w in input().split()]
 			if c == 1:
